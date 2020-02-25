@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: 'ENV_MONGODB_URI'});
 
 var express = require("express"),
     app = express(),
@@ -9,7 +9,7 @@ var express = require("express"),
 // DB Connection     
 const databaseUri = process.env.MONGODB_URI;
 mongoose.connect(databaseUri, {useNewUrlParser: true});
-app.use(bodyParser.urlencoded({extended: true}));
+
 
 
 // Routes 
