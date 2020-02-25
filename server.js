@@ -1,8 +1,9 @@
-require('dotenv').config({ path: 'ENV_MONGODB_URI'});
+require('dotenv').config()
 
 var express = require("express"),
     app = express(),
     mongoose = require("mongoose"),
+    
     bodyParser = require("body-parser");
 
 
@@ -10,11 +11,15 @@ var express = require("express"),
 const databaseUri = process.env.MONGODB_URI;
 mongoose.connect(databaseUri, {useNewUrlParser: true});
 
+app.use(bodyParser.urlencoded({extended : true}));
+app.set("view engine","ejs")
+app.use(express.static(__dirname + "/public"));
 
 
-// Routes 
+
+
 app.get("/", function(req, res){
-    res.send("boy fuck you")
+    res.render("app")
 });
 
 
