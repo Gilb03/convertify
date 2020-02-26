@@ -9,7 +9,7 @@ var express = require("express"),
 
 // DB Connection     
 const databaseUri = process.env.MONGODB_URI;
-mongoose.connect(databaseUri, {useNewUrlParser: true});
+mongoose.connect(databaseUri, {useNewUrlParser: true}, {useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine","ejs")
