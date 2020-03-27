@@ -1,19 +1,26 @@
 {
   "name": "convertify",
   "version": "1.0.0",
-  "description": "file conversion",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node server.js",
     "start": "node server.js"
   },
-  "author": "Gil B",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gilb03/convertify.git"
+  },
+  "author": "Gil B.",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gilb03/convertify/issues"
+  },
+  "homepage": "https://github.com/Gilb03/convertify#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "create-react-app": "^3.4.1",
     "dotenv": "^8.2.0",
-    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
     "mongoose": "^5.9.6",
