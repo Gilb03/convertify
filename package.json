@@ -19,11 +19,12 @@
   "homepage": "https://github.com/Gilb03/convertify#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "create-react-app": "^3.4.1",
+    "create-react-app": "^4.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
-    "mongoose": "^5.9.6",
-    "node-sass": "^4.13.1"
+    "mongoose": "^5.11.8",
+    "mquery": "^3.2.3",
+    "node-sass": "^5.0.0"
   }
 }
