@@ -25,6 +25,6 @@
     "js-cookie": "^2.2.1",
     "mongoose": "^5.11.8",
     "mquery": "^3.2.3",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   }
 }
